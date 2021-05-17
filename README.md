@@ -1,8 +1,8 @@
 # Preparation for QE
-Name: Andrew Koh Jin Jie
-Date of QE presentation: 17/5/2021
-Title: Transfer Learning for Non-Autoregressive Sequence Generation
-School: Nanyang Technological University, School of Computer Science and Engineering
+Name: Andrew Koh Jin Jie  
+Date of QE presentation: 17/5/2021  
+Title: Transfer Learning for Non-Autoregressive Sequence Generation  
+School: Nanyang Technological University, School of Computer Science and Engineering  
 
 ## Resources in this repository 
 1. Latex folder for report. This can be imported directly into overleaf.
