@@ -22,4 +22,4 @@ After determining my talking points, I went ahead with writing my report. Given 
 As for the presentation, I wanted to deliver my content fluidly while not potentially inducing boredom in the examiners. Personally, I have always felt that a powerpoint slide should always be graphical and understandable from a glance (have glance value). The bulk of the content should explained/said by yourself. This was the approach i went with. I also included 'milestone slides' (like slide 29), which were slides which aimed to not just provide a summary of the previous few slides, but also acted a 'breather' for the minds of those listening. I also did my best to provide graphs in place of tables for experimental results, and color schemes to make results more intuitive.
 
 ## Acknowledgements
-I would like to express my gratitude to Prof Chng Eng Siong, my supervisor, who helped me through revising my report through multiple iterations.
+I would like to express my gratitude to Prof Chng Eng Siong, my supervisor, who helped me through revising my report and presentations through multiple iterations.
