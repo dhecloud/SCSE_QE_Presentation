@@ -1,0 +1,5 @@
+Window Size,1/1,2/2,4/4,8/8,0/1,0/2,0/4,0/8
+distilled data from scratch,27.04,25.48,22.52,18.13,26.94,25.76,23.55,19.63
+distilled data from pretrained,27.44,25.75,22.72,16.7,26.37,26.45,23.87,19.5
+original data from scratch,26.14,22.58,16.92,7.18,26.12,23.26,18.72,9.45
+original data from pretrained,26.27,23.1,17.15,6.85,23.57,23.41,18.18,9.45

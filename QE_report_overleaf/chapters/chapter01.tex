@@ -1,0 +1,25 @@
+
+This section serves as a brief preamble of the motivation behind this research topic, and delineates the structure of this report. 
+
+\section{Motivation} \label{sec:motivation}
+Non-autoregressive sequence generation is an emerging research area in its infancy. It refers to the speeding up the decoding of the sequence generation by generating parts of, or the whole of the sequence in one decoding step. Thus far, it is typically used in conjunction with variants of the transformer model, and mainly applied in the domain of machine translation. However, it is noted \cite{wang_semi-autoregressive_2018} that while the non-autoregressive literature often falls into the domain of machine translation, the non-autoregressive decoding process is not limited to machine translation, and can in fact be applied to other tasks such as summarization, question answering, or any task which involves generating a sequence.
+
+Research in non-autoregressive sequence generation is crucial as it tackles one major drawback of current autoregressive sequence generation methods. Specifically, this drawback refers to the huge bottleneck during decoding; sequences in autogressive sequence decoding are generated token by token, with each token requiring one forward pass through the model. This inhibits parallelism during inference, and the computation cost is compounded with different decoding methods and the size of the model. Tackling this bottleneck would result in many benefits, such as a greatly increased decoding speed, savings in time, money, and computational cost, and a lower barrier to entry for using sequence generation.
+
+However, non-autoregressive sequence generation unfortunately suffers from multiple problems. Removing the autoregressive factorization across time or decoding steps causes the model to depend only on the source sentence for decoding, and this greatly reduces the quality of the generation. These problems, along with their solutions, will be discussed in subsequent sections.
+
+\section{Report Outline} \label{sec:report_outline}
+This report will explore and discuss these topics. In Chapter 2, we will briefly introduce the background of autoregressive methods and models, and popular training methods such as transfer learning. We will examine the limitations of these methods and models and introduce the need for non-autoregressive methods. We will then provide a comprehensive literature review of non-autoregressive models along with their proposed solutions. In Chapter 3, we will discuss our motivation and thought process behind our proposed approach. In Chapter 4, we will go through our methodology, implementation details, and experimental results. Finally, in Chapter 5, we conclude and propose several avenues of research for future work.
+
+% While there has been non-autoregressive methods such as CTC applied to automatic speech recognition, there is  
+
+
+% Insert images like this:
+% \begin{figure}[h!]
+%     \centering
+%     \includegraphics[width=0.50\textwidth]{images/chap01_images/PaleBlueDot.png}
+%     \caption{Photograph of planet Earth taken on February 14, 1990, by the Voyager 1 space probe from a record distance of about 6 billion kilometers.}
+%     \label{fig: PaleBlueDot}    
+% \end{figure
+
+% This is some random reference (\cite{sanchez2011introduction}). \textcite{parish2009propagation} is an example of how to use textcite.

@@ -1,0 +1,12 @@
+\section{Concluding Remarks}
+
+In this work, we have examined the potential of using transfer learning for non-autoregressive sequence generation in machine translation. We introduce a straightforward architecture involving adapter modules to adapt current autoregressive models to new non-autoregressive models via transfer learning. Next, we propose a novel decoding method, the hysteresis decoding method, to aid in sequence refinement and help improve BLEU scores at higher window sizes. Finally, we examine the contribution of different layers to non-autoregressive sequence generation.
+
+This work has provided some insight into the workings of non-autoregressive sequence models, and how its limitations can possibly be tackled in future work.
+
+
+\subsection{Future Work}
+As seen in our experiments, the layers that seem to be the most instrumental to non-autoregressive decoding are the first few and last few layers of the transformer encoder. Therefore, it might be a good idea to supplement the encoder with external knowledge. One potential area of research is to incorporate graph embeddings into the encoder. 
+
+\subsubsection{Application to other tasks}
+Other than machine translation, other unexplored applications for non-autoregressive sequence generation tasks include automated audio captioning. Automated audio captioning applications often require real time captioning, hence there is a need for speed. However, it is slightly different from the work in this task, and the input would be preprocessed log-mel spectrograms, instead of word piece embedddings like in text. 

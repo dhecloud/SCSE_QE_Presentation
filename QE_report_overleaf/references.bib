@@ -1,0 +1,848 @@
+@article{yap_adapting_2020,
+	title = {Adapting {BERT} for {Word} {Sense} {Disambiguation} with {Gloss} {Selection} {Objective} and {Example} {Sentences}},
+	copyright = {All rights reserved},
+	url = {http://arxiv.org/abs/2009.11795},
+	abstract = {Domain adaptation or transfer learning using pre-trained language models such as BERT has proven to be an effective approach for many natural language processing tasks. In this work, we propose to formulate word sense disambiguation as a relevance ranking task, and fine-tune BERT on sequence-pair ranking task to select the most probable sense definition given a context sentence and a list of candidate sense definitions. We also introduce a data augmentation technique for WSD using existing example sentences from WordNet. Using the proposed training objective and data augmentation technique, our models are able to achieve state-of-the-art results on the English all-words benchmark datasets.},
+	urldate = {2020-12-21},
+	journal = {arXiv:2009.11795 [cs]},
+	author = {Yap, Boon Peng and Koh, Andrew and Chng, Eng Siong},
+	month = oct,
+	year = {2020},
+	note = {arXiv: 2009.11795},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+	annote = {Comment: Accepted to appear in Findings of EMNLP 2020},
+	file = {arXiv.org Snapshot:/Users/andrew/Zotero/storage/UP6MQE36/2009.html:text/html;arXiv Fulltext PDF:/Users/andrew/Zotero/storage/62M2DZR8/Yap et al. - 2020 - Adapting BERT for Word Sense Disambiguation with G.pdf:application/pdf},
+	keywords = {myref},
+}
+
+@article{vaswani_attention_2017,
+	title = {Attention {Is} {All} {You} {Need}},
+	url = {http://arxiv.org/abs/1706.03762},
+	abstract = {The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.},
+	urldate = {2021-01-14},
+	journal = {arXiv:1706.03762 [cs]},
+	author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, Lukasz and Polosukhin, Illia},
+	month = dec,
+	year = {2017},
+	note = {arXiv: 1706.03762},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+	annote = {Comment: 15 pages, 5 figures},
+	file = {arXiv Fulltext PDF:C\:\\Users\\andre\\Zotero\\storage\\8HEUVNDP\\Vaswani et al. - 2017 - Attention Is All You Need.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\andre\\Zotero\\storage\\FVZB5ZFB\\1706.html:text/html},
+}
+
+
+@article{elman_distributed_1991,
+	title = {Distributed {Representations}, {Simple} {Recurrent} {Networks}, {And} {Grammatical} {Structure}},
+	volume = {7},
+	issn = {1573-0565},
+	url = {https://doi.org/10.1023/A:1022699029236},
+	doi = {10.1023/A:1022699029236},
+	abstract = {In this paper three problems for a connectionist account of language are considered:},
+	language = {en},
+	number = {2},
+	urldate = {2021-01-14},
+	journal = {Machine Learning},
+	author = {Elman, Jeffrey L.},
+	month = sep,
+	year = {1991},
+	pages = {195--225},
+	file = {Springer Full Text PDF:C\:\\Users\\andre\\Zotero\\storage\\HZBRQLXW\\Elman - 1991 - Distributed Representations, Simple Recurrent Netw.pdf:application/pdf},
+}
+
+
+@article{lstm_original,
+	title = {Long {Short}-{Term} {Memory}},
+	volume = {9},
+	issn = {0899-7667},
+	url = {https://doi.org/10.1162/neco.1997.9.8.1735},
+	doi = {10.1162/neco.1997.9.8.1735},
+	abstract = {Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis of this problem, then address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units. Multiplicative gate units learn to open and close access to the constant error flow. LSTM is local in space and time; its computational complexity per time step and weight is O. 1. Our experiments with artificial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with real-time recurrent learning, back propagation through time, recurrent cascade correlation, Elman nets, and neural sequence chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artificial long-time-lag tasks that have never been solved by previous recurrent network algorithms.},
+	number = {8},
+	urldate = {2021-01-14},
+	journal = {Neural Computation},
+	author = {Hochreiter, Sepp and Schmidhuber, Jürgen},
+	month = nov,
+	year = {1997},
+	pages = {1735--1780},
+}
+
+
+@article{gru_paper,
+	title = {Learning {Phrase} {Representations} using {RNN} {Encoder}-{Decoder} for {Statistical} {Machine} {Translation}},
+	url = {http://arxiv.org/abs/1406.1078},
+	abstract = {In this paper, we propose a novel neural network model called RNN Encoder-Decoder that consists of two recurrent neural networks (RNN). One RNN encodes a sequence of symbols into a fixed-length vector representation, and the other decodes the representation into another sequence of symbols. The encoder and decoder of the proposed model are jointly trained to maximize the conditional probability of a target sequence given a source sequence. The performance of a statistical machine translation system is empirically found to improve by using the conditional probabilities of phrase pairs computed by the RNN Encoder-Decoder as an additional feature in the existing log-linear model. Qualitatively, we show that the proposed model learns a semantically and syntactically meaningful representation of linguistic phrases.},
+	urldate = {2021-01-14},
+	journal = {arXiv:1406.1078 [cs, stat]},
+	author = {Cho, Kyunghyun and van Merrienboer, Bart and Gulcehre, Caglar and Bahdanau, Dzmitry and Bougares, Fethi and Schwenk, Holger and Bengio, Yoshua},
+	month = sep,
+	year = {2014},
+	note = {arXiv: 1406.1078},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing, Statistics - Machine Learning},
+	annote = {Comment: EMNLP 2014},
+}
+
+
+@article{battaglia_relational_inductive_biases_2018,
+	title = {Relational inductive biases, deep learning, and graph networks},
+	url = {http://arxiv.org/abs/1806.01261},
+	abstract = {Artiﬁcial intelligence (AI) has undergone a renaissance recently, making major progress in key domains such as vision, language, control, and decision-making. This has been due, in part, to cheap data and cheap compute resources, which have ﬁt the natural strengths of deep learning. However, many deﬁning characteristics of human intelligence, which developed under much di↵erent pressures, remain out of reach for current approaches. In particular, generalizing beyond one’s experiences—a hallmark of human intelligence from infancy—remains a formidable challenge for modern AI.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:1806.01261 [cs, stat]},
+	author = {Battaglia, Peter W. and Hamrick, Jessica B. and Bapst, Victor and Sanchez-Gonzalez, Alvaro and Zambaldi, Vinicius and Malinowski, Mateusz and Tacchetti, Andrea and Raposo, David and Santoro, Adam and Faulkner, Ryan and Gulcehre, Caglar and Song, Francis and Ballard, Andrew and Gilmer, Justin and Dahl, George and Vaswani, Ashish and Allen, Kelsey and Nash, Charles and Langston, Victoria and Dyer, Chris and Heess, Nicolas and Wierstra, Daan and Kohli, Pushmeet and Botvinick, Matt and Vinyals, Oriol and Li, Yujia and Pascanu, Razvan},
+	month = oct,
+	year = {2018},
+	note = {arXiv: 1806.01261},
+	keywords = {Computer Science - Machine Learning, Computer Science - Artificial Intelligence, Statistics - Machine Learning},
+	file = {Battaglia et al. - 2018 - Relational inductive biases, deep learning, and gr.pdf:C\:\\Users\\andre\\Zotero\\storage\\VXUJ5MVS\\Battaglia et al. - 2018 - Relational inductive biases, deep learning, and gr.pdf:application/pdf},
+}
+
+
+@article{williams_learning_1989_teacher_forcing,
+	title = {A {Learning} {Algorithm} for {Continually} {Running} {Fully} {Recurrent} {Neural} {Networks}},
+	volume = {1},
+	issn = {0899-7667},
+	doi = {10.1162/neco.1989.1.2.270},
+	abstract = {The exact form of a gradient-following learning algorithm for completely recurrent networks running in continually sampled time is derived and used as the basis for practical algorithms for temporal supervised learning tasks. These algorithms have (1) the advantage that they do not require a precisely defined training interval, operating while the network runs; and (2) the disadvantage that they require nonlocal communication in the network being trained and are computationally expensive. These algorithms allow networks having recurrent connections to learn complex tasks that require the retention of information over time periods having either fixed or indefinite length.},
+	number = {2},
+	journal = {Neural Computation},
+	author = {Williams, R. J. and Zipser, D.},
+	month = jun,
+	year = {1989},
+	note = {Conference Name: Neural Computation},
+	pages = {270--280},
+	file = {IEEE Xplore Abstract Record:C\:\\Users\\andre\\Zotero\\storage\\882AZ48R\\6795228.html:text/html},
+}
+
+
+@article{cho_learning_2014_encdec,
+	title = {Learning {Phrase} {Representations} using {RNN} {Encoder}-{Decoder} for {Statistical} {Machine} {Translation}},
+	url = {http://arxiv.org/abs/1406.1078},
+	abstract = {In this paper, we propose a novel neural network model called RNN Encoder-Decoder that consists of two recurrent neural networks (RNN). One RNN encodes a sequence of symbols into a fixed-length vector representation, and the other decodes the representation into another sequence of symbols. The encoder and decoder of the proposed model are jointly trained to maximize the conditional probability of a target sequence given a source sequence. The performance of a statistical machine translation system is empirically found to improve by using the conditional probabilities of phrase pairs computed by the RNN Encoder-Decoder as an additional feature in the existing log-linear model. Qualitatively, we show that the proposed model learns a semantically and syntactically meaningful representation of linguistic phrases.},
+	urldate = {2021-01-14},
+	journal = {arXiv:1406.1078 [cs, stat]},
+	author = {Cho, Kyunghyun and van Merrienboer, Bart and Gulcehre, Caglar and Bahdanau, Dzmitry and Bougares, Fethi and Schwenk, Holger and Bengio, Yoshua},
+	month = sep,
+	year = {2014},
+	note = {arXiv: 1406.1078},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning, Statistics - Machine Learning, Computer Science - Neural and Evolutionary Computing, unread},
+	annote = {Comment: EMNLP 2014},
+}
+
+
+@article{bahdanau_neural_2016_encdec,
+	title = {Neural {Machine} {Translation} by {Jointly} {Learning} to {Align} and {Translate}},
+	url = {http://arxiv.org/abs/1409.0473},
+	abstract = {Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder-decoders and consists of an encoder that encodes a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition.},
+	urldate = {2021-01-14},
+	journal = {arXiv:1409.0473 [cs, stat]},
+	author = {Bahdanau, Dzmitry and Cho, Kyunghyun and Bengio, Yoshua},
+	month = may,
+	year = {2016},
+	note = {arXiv: 1409.0473},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning, Statistics - Machine Learning, Computer Science - Neural and Evolutionary Computing, unread},
+	annote = {Comment: Accepted at ICLR 2015 as oral presentation},
+	file = {arXiv Fulltext PDF:C\:\\Users\\andre\\Zotero\\storage\\SZ5SH2L9\\Bahdanau et al. - 2016 - Neural Machine Translation by Jointly Learning to .pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\andre\\Zotero\\storage\\LAGBLVEJ\\1409.html:text/html},
+}
+
+
+@article{sutskever_sequence_2014_encdec,
+	title = {Sequence to {Sequence} {Learning} with {Neural} {Networks}},
+	url = {http://arxiv.org/abs/1409.3215},
+	abstract = {Deep Neural Networks (DNNs) are powerful models that have achieved excellent performance on difﬁcult learning tasks. Although DNNs work well whenever large labeled training sets are available, they cannot be used to map sequences to sequences. In this paper, we present a general end-to-end approach to sequence learning that makes minimal assumptions on the sequence structure. Our method uses a multilayered Long Short-Term Memory (LSTM) to map the input sequence to a vector of a ﬁxed dimensionality, and then another deep LSTM to decode the target sequence from the vector. Our main result is that on an English to French translation task from the WMT’14 dataset, the translations produced by the LSTM achieve a BLEU score of 34.8 on the entire test set, where the LSTM’s BLEU score was penalized on out-of-vocabulary words. Additionally, the LSTM did not have difﬁculty on long sentences. For comparison, a phrase-based SMT system achieves a BLEU score of 33.3 on the same dataset. When we used the LSTM to rerank the 1000 hypotheses produced by the aforementioned SMT system, its BLEU score increases to 36.5, which is close to the previous best result on this task. The LSTM also learned sensible phrase and sentence representations that are sensitive to word order and are relatively invariant to the active and the passive voice. Finally, we found that reversing the order of the words in all source sentences (but not target sentences) improved the LSTM’s performance markedly, because doing so introduced many short term dependencies between the source and the target sentence which made the optimization problem easier.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:1409.3215 [cs]},
+	author = {Sutskever, Ilya and Vinyals, Oriol and Le, Quoc V.},
+	month = dec,
+	year = {2014},
+	note = {arXiv: 1409.3215},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+	annote = {Comment: 9 pages},
+	file = {Sutskever et al. - 2014 - Sequence to Sequence Learning with Neural Networks.pdf:C\:\\Users\\andre\\Zotero\\storage\\LYY69SLI\\Sutskever et al. - 2014 - Sequence to Sequence Learning with Neural Networks.pdf:application/pdf},
+}
+
+
+@article{devlin_bert_2019,
+	title = {{BERT}: {Pre}-training of {Deep} {Bidirectional} {Transformers} for {Language} {Understanding}},
+	shorttitle = {{BERT}},
+	url = {http://arxiv.org/abs/1810.04805},
+	abstract = {We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5\% (7.7\% point absolute improvement), MultiNLI accuracy to 86.7\% (4.6\% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).},
+	urldate = {2021-01-14},
+	journal = {arXiv:1810.04805 [cs]},
+	author = {Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+	month = may,
+	year = {2019},
+	note = {arXiv: 1810.04805},
+	keywords = {Computer Science - Computation and Language},
+	file = {arXiv Fulltext PDF:/Users/andrew/Zotero/storage/PTPYIVC8/Devlin et al. - 2019 - BERT Pre-training of Deep Bidirectional Transform.pdf:application/pdf;arXiv.org Snapshot:/Users/andrew/Zotero/storage/HGDKFFJQ/1810.html:text/html},
+}
+
+@article{mikolov_efficient_2013_word2vec,
+	title = {Efficient {Estimation} of {Word} {Representations} in {Vector} {Space}},
+	url = {http://arxiv.org/abs/1301.3781},
+	abstract = {We propose two novel model architectures for computing continuous vector representations of words from very large data sets. The quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks. We observe large improvements in accuracy at much lower computational cost, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set. Furthermore, we show that these vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.},
+	urldate = {2021-01-14},
+	journal = {arXiv:1301.3781 [cs]},
+	author = {Mikolov, Tomas and Chen, Kai and Corrado, Greg and Dean, Jeffrey},
+	month = sep,
+	year = {2013},
+	note = {arXiv: 1301.3781},
+	keywords = {Computer Science - Computation and Language},
+	file = {arXiv Fulltext PDF:/Users/andrew/Zotero/storage/I266P6F5/Mikolov et al. - 2013 - Efficient Estimation of Word Representations in Ve.pdf:application/pdf;arXiv.org Snapshot:/Users/andrew/Zotero/storage/GVZE8PL6/1301.html:text/html},
+}
+
+
+
+
+@article{radford_language_nodate_gpt2,
+	title = {Language {Models} are {Unsupervised} {Multitask} {Learners}},
+	abstract = {Natural language processing tasks, such as question answering, machine translation, reading comprehension, and summarization, are typically approached with supervised learning on taskspeciﬁc datasets. We demonstrate that language models begin to learn these tasks without any explicit supervision when trained on a new dataset of millions of webpages called WebText. When conditioned on a document plus questions, the answers generated by the language model reach 55 F1 on the CoQA dataset - matching or exceeding the performance of 3 out of 4 baseline systems without using the 127,000+ training examples. The capacity of the language model is essential to the success of zero-shot task transfer and increasing it improves performance in a log-linear fashion across tasks. Our largest model, GPT-2, is a 1.5B parameter Transformer that achieves state of the art results on 7 out of 8 tested language modeling datasets in a zero-shot setting but still underﬁts WebText. Samples from the model reﬂect these improvements and contain coherent paragraphs of text. These ﬁndings suggest a promising path towards building language processing systems which learn to perform tasks from their naturally occurring demonstrations.},
+	language = {en},
+	author = {Radford, Alec and Wu, Jeffrey and Child, Rewon and Luan, David and Amodei, Dario and Sutskever, Ilya},
+	pages = {24},
+	file = {Radford et al. - Language Models are Unsupervised Multitask Learner.pdf:/Users/andrew/Zotero/storage/XFZM8S4W/Radford et al. - Language Models are Unsupervised Multitask Learner.pdf:application/pdf},
+}
+
+@misc{brown_language_2020_gpt3,
+      title={Language Models are Few-Shot Learners}, 
+      author={Tom B. Brown and Benjamin Mann and Nick Ryder and Melanie Subbiah and Jared Kaplan and Prafulla Dhariwal and Arvind Neelakantan and Pranav Shyam and Girish Sastry and Amanda Askell and Sandhini Agarwal and Ariel Herbert-Voss and Gretchen Krueger and Tom Henighan and Rewon Child and Aditya Ramesh and Daniel M. Ziegler and Jeffrey Wu and Clemens Winter and Christopher Hesse and Mark Chen and Eric Sigler and Mateusz Litwin and Scott Gray and Benjamin Chess and Jack Clark and Christopher Berner and Sam McCandlish and Alec Radford and Ilya Sutskever and Dario Amodei},
+      year={2020},
+      eprint={2005.14165},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+
+@article{rogers_primer_in_bert_2020,
+	title = {A {Primer} in {BERTology}: {What} we know about how {BERT} works},
+	shorttitle = {A {Primer} in {BERTology}},
+	url = {http://arxiv.org/abs/2002.12327},
+	abstract = {Transformer-based models have pushed state of the art in many areas of NLP, but our understanding of what is behind their success is still limited. This paper is the ﬁrst survey of over 150 studies of the popular BERT model. We review the current state of knowledge about how BERT works, what kind of information it learns and how it is represented, common modiﬁcations to its training objectives and architecture, the overparameterization issue and approaches to compression. We then outline directions for future research.},
+	language = {en},
+	urldate = {2021-01-11},
+	journal = {arXiv:2002.12327 [cs]},
+	author = {Rogers, Anna and Kovaleva, Olga and Rumshisky, Anna},
+	month = nov,
+	year = {2020},
+	note = {arXiv: 2002.12327},
+	keywords = {Computer Science - Computation and Language},
+	annote = {Comment: Accepted to TACL. Please note that the multilingual BERT section is only available in version 1},
+	file = {Rogers et al. - 2020 - A Primer in BERTology What we know about how BERT.pdf:/Users/andrew/Zotero/storage/2QFCICSN/Rogers et al. - 2020 - A Primer in BERTology What we know about how BERT.pdf:application/pdf},
+}
+@misc{ganesh2020compressing_turingNLG_param_ref,
+      title={Compressing Large-Scale Transformer-Based Models: A Case Study on BERT}, 
+      author={Prakhar Ganesh and Yao Chen and Xin Lou and Mohammad Ali Khan and Yin Yang and Deming Chen and Marianne Winslett and Hassan Sajjad and Preslav Nakov},
+      year={2020},
+      eprint={2002.11985},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+@article{schwartz_green_ai_2019,
+	title = {Green {AI}},
+	url = {http://arxiv.org/abs/1907.10597},
+	abstract = {The computations required for deep learning research have been doubling every few months, resulting in an estimated 300,000x increase from 2012 to 2018 [2]. These computations have a surprisingly large carbon footprint [40]. Ironically, deep learning was inspired by the human brain, which is remarkably energy efﬁcient. Moreover, the ﬁnancial cost of the computations can make it difﬁcult for academics, students, and researchers, in particular those from emerging economies, to engage in deep learning research.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:1907.10597 [cs, stat]},
+	author = {Schwartz, Roy and Dodge, Jesse and Smith, Noah A. and Etzioni, Oren},
+	month = aug,
+	year = {2019},
+	note = {arXiv: 1907.10597},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning, Computer Science - Computers and Society, Computer Science - Computer Vision and Pattern Recognition, Statistics - Methodology},
+	annote = {Comment: 12 pages},
+	file = {Schwartz et al. - 2019 - Green AI.pdf:/Users/andrew/Zotero/storage/WCRWQGTM/Schwartz et al. - 2019 - Green AI.pdf:application/pdf},
+}
+
+@article{hinton_distilling_2015,
+	title = {Distilling the {Knowledge} in a {Neural} {Network}},
+	url = {http://arxiv.org/abs/1503.02531},
+	abstract = {A very simple way to improve the performance of almost any machine learning algorithm is to train many different models on the same data and then to average their predictions. Unfortunately, making predictions using a whole ensemble of models is cumbersome and may be too computationally expensive to allow deployment to a large number of users, especially if the individual models are large neural nets. Caruana and his collaborators have shown that it is possible to compress the knowledge in an ensemble into a single model which is much easier to deploy and we develop this approach further using a different compression technique. We achieve some surprising results on MNIST and we show that we can significantly improve the acoustic model of a heavily used commercial system by distilling the knowledge in an ensemble of models into a single model. We also introduce a new type of ensemble composed of one or more full models and many specialist models which learn to distinguish fine-grained classes that the full models confuse. Unlike a mixture of experts, these specialist models can be trained rapidly and in parallel.},
+	urldate = {2021-01-14},
+	journal = {arXiv:1503.02531 [cs, stat]},
+	author = {Hinton, Geoffrey and Vinyals, Oriol and Dean, Jeff},
+	month = mar,
+	year = {2015},
+	note = {arXiv: 1503.02531},
+	keywords = {Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing, Statistics - Machine Learning, unread},
+	annote = {Comment: NIPS 2014 Deep Learning Workshop},
+	file = {arXiv Fulltext PDF:/Users/andrew/Zotero/storage/XWDLGE4R/Hinton et al. - 2015 - Distilling the Knowledge in a Neural Network.pdf:application/pdf},
+}
+
+
+@article{sanh_distilbert_2020,
+	title = {{DistilBERT}, a distilled version of {BERT}: smaller, faster, cheaper and lighter},
+	shorttitle = {{DistilBERT}, a distilled version of {BERT}},
+	url = {http://arxiv.org/abs/1910.01108},
+	abstract = {As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-theedge and/or under constrained computational training or inference budgets remain challenging. In this work, we propose a method to pre-train a smaller generalpurpose language representation model, called DistilBERT, which can then be ﬁnetuned with good performances on a wide range of tasks like its larger counterparts. While most prior work investigated the use of distillation for building task-speciﬁc models, we leverage knowledge distillation during the pre-training phase and show that it is possible to reduce the size of a BERT model by 40\%, while retaining 97\% of its language understanding capabilities and being 60\% faster. To leverage the inductive biases learned by larger models during pre-training, we introduce a triple loss combining language modeling, distillation and cosine-distance losses. Our smaller, faster and lighter model is cheaper to pre-train and we demonstrate its capabilities for on-device computations in a proof-of-concept experiment and a comparative on-device study.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:1910.01108 [cs]},
+	author = {Sanh, Victor and Debut, Lysandre and Chaumond, Julien and Wolf, Thomas},
+	month = feb,
+	year = {2020},
+	note = {arXiv: 1910.01108},
+	keywords = {Computer Science - Computation and Language},
+	annote = {Comment: February 2020 - Revision: fix bug in evaluation metrics, updated metrics, argumentation unchanged. 5 pages, 1 figure, 4 tables. Accepted at the 5th Workshop on Energy Efficient Machine Learning and Cognitive Computing - NeurIPS 2019},
+	file = {Sanh et al. - 2020 - DistilBERT, a distilled version of BERT smaller, .pdf:/Users/andrew/Zotero/storage/TSIDK5CI/Sanh et al. - 2020 - DistilBERT, a distilled version of BERT smaller, .pdf:application/pdf},
+}
+
+
+@article{chen_lottery_2020,
+	title = {The {Lottery} {Ticket} {Hypothesis} for {Pre}-trained {BERT} {Networks}},
+	url = {http://arxiv.org/abs/2007.12223},
+	abstract = {In natural language processing (NLP), enormous pre-trained models like BERT have become the standard starting point for training on a range of downstream tasks, and similar trends are emerging in other areas of deep learning. In parallel, work on the lottery ticket hypothesis has shown that models for NLP and computer vision contain smaller matching subnetworks capable of training in isolation to full accuracy and transferring to other tasks. In this work, we combine these observations to assess whether such trainable, transferrable subnetworks exist in pre-trained BERT models. For a range of downstream tasks, we indeed ﬁnd matching subnetworks at 40\% to 90\% sparsity. We ﬁnd these subnetworks at (pre-trained) initialization, a deviation from prior NLP research where they emerge only after some amount of training. Subnetworks found on the masked language modeling task (the same task used to pre-train the model) transfer universally; those found on other tasks transfer in a limited fashion if at all. As large-scale pre-training becomes an increasingly central paradigm in deep learning, our results demonstrate that the main lottery ticket observations remain relevant in this context. Codes available at https://github.com/TAMU-VITA/BERT-Tickets.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:2007.12223 [cs, stat]},
+	author = {Chen, Tianlong and Frankle, Jonathan and Chang, Shiyu and Liu, Sijia and Zhang, Yang and Wang, Zhangyang and Carbin, Michael},
+	month = oct,
+	year = {2020},
+	note = {arXiv: 2007.12223},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning, Statistics - Machine Learning, Computer Science - Neural and Evolutionary Computing},
+	annote = {Comment: NeurIPS 2020},
+	file = {Chen et al. - 2020 - The Lottery Ticket Hypothesis for Pre-trained BERT.pdf:/Users/andrew/Zotero/storage/Y4J9LGLX/Chen et al. - 2020 - The Lottery Ticket Hypothesis for Pre-trained BERT.pdf:application/pdf},
+}
+
+
+@article{frankle_lottery_2019,
+	title = {{THE} {LOTTERY} {TICKET} {HYPOTHESIS}: {FINDING} {SPARSE}, {TRAINABLE} {NEURAL} {NETWORKS}},
+	abstract = {Neural network pruning techniques can reduce the parameter counts of trained networks by over 90\%, decreasing storage requirements and improving computational / performance of inference without compromising accuracy. However, contemporary experience is that the sparse architectures produced by pruning are difﬁcult to train from the start, which would similarly improve training performance.},
+	language = {en},
+	author = {Frankle, Jonathan and Carbin, Michael},
+	year = {2019},
+	pages = {42},
+	file = {Frankle and Carbin - 2019 - THE LOTTERY TICKET HYPOTHESIS FINDING SPARSE, TRA.pdf:/Users/andrew/Zotero/storage/FC53I4Z8/Frankle and Carbin - 2019 - THE LOTTERY TICKET HYPOTHESIS FINDING SPARSE, TRA.pdf:application/pdf},
+}
+
+@misc{gu_non-autoregressive_2018,
+      title={Non-Autoregressive Neural Machine Translation}, 
+      author={Jiatao Gu and James Bradbury and Caiming Xiong and Victor O. K. Li and Richard Socher},
+      year={2018},
+      eprint={1711.02281},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+
+@article{zhou_understanding_2020,
+	title = {Understanding {Knowledge} {Distillation} in {Non}-autoregressive {Machine} {Translation}},
+	url = {http://arxiv.org/abs/1911.02727},
+	abstract = {Non-autoregressive machine translation (NAT) systems predict a sequence of output tokens in parallel, achieving substantial improvements in generation speed compared to autoregressive models. Existing NAT models usually rely on the technique of knowledge distillation, which creates the training data from a pretrained autoregressive model for better performance. Knowledge distillation is empirically useful, leading to large gains in accuracy for NAT models, but the reason for this success has, as of yet, been unclear. In this paper, we first design systematic experiments to investigate why knowledge distillation is crucial to NAT training. We find that knowledge distillation can reduce the complexity of data sets and help NAT to model the variations in the output data. Furthermore, a strong correlation is observed between the capacity of an NAT model and the optimal complexity of the distilled data for the best translation quality. Based on these findings, we further propose several approaches that can alter the complexity of data sets to improve the performance of NAT models. We achieve the state-of-the-art performance for the NAT-based models, and close the gap with the autoregressive baseline on WMT14 En-De benchmark.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:1911.02727 [cs]},
+	author = {Zhou, Chunting and Neubig, Graham and Gu, Jiatao},
+	month = feb,
+	year = {2020},
+	note = {arXiv: 1911.02727},
+	keywords = {Computer Science - Computation and Language},
+	annote = {Comment: accepted by ICLR 2020},
+	file = {Zhou et al. - 2020 - Understanding Knowledge Distillation in Non-autore.pdf:/Users/andrew/Zotero/storage/8VVXASL7/Zhou et al. - 2020 - Understanding Knowledge Distillation in Non-autore.pdf:application/pdf},
+}
+
+
+@article{gu_levenshtein_2019,
+	title = {Levenshtein {Transformer}},
+	url = {http://arxiv.org/abs/1905.11006},
+	abstract = {Modern neural sequence generation models are built to either generate tokens step-by-step from scratch or (iteratively) modify a sequence of tokens bounded by a fixed length. In this work, we develop Levenshtein Transformer, a new partially autoregressive model devised for more flexible and amenable sequence generation. Unlike previous approaches, the atomic operations of our model are insertion and deletion. The combination of them facilitates not only generation but also sequence refinement allowing dynamic length changes. We also propose a set of new training techniques dedicated at them, effectively exploiting one as the other's learning signal thanks to their complementary nature. Experiments applying the proposed model achieve comparable performance but much-improved efficiency on both generation (e.g. machine translation, text summarization) and refinement tasks (e.g. automatic post-editing). We further confirm the flexibility of our model by showing a Levenshtein Transformer trained by machine translation can straightforwardly be used for automatic post-editing.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:1905.11006 [cs]},
+	author = {Gu, Jiatao and Wang, Changhan and Zhao, Jake},
+	month = oct,
+	year = {2019},
+	note = {arXiv: 1905.11006},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+	annote = {Comment: 17 pages (6 pages appendix). Camera ready, accepted by NeurIPS 2019},
+	file = {Gu et al. - 2019 - Levenshtein Transformer.pdf:/Users/andrew/Zotero/storage/BJAZWR95/Gu et al. - 2019 - Levenshtein Transformer.pdf:application/pdf},
+}
+
+
+@article{guo_non-autoregressive_2020_image_captioning,
+	title = {Non-{Autoregressive} {Image} {Captioning} with {Counterfactuals}-{Critical} {Multi}-{Agent} {Learning}},
+	url = {http://arxiv.org/abs/2005.04690},
+	abstract = {Most image captioning models are autoregressive, i.e. they generate each word by conditioning on previously generated words, which leads to heavy latency during inference. Recently, nonautoregressive decoding has been proposed in machine translation to speed up the inference time by generating all words in parallel. Typically, these models use the word-level cross-entropy loss to optimize each word independently. However, such a learning process fails to consider the sentencelevel consistency, thus resulting in inferior generation quality of these non-autoregressive models. In this paper, we propose a Non-Autoregressive Image Captioning (NAIC) model with a novel training paradigm: Counterfactuals-critical MultiAgent Learning (CMAL). CMAL formulates NAIC as a multi-agent reinforcement learning system where positions in the target sequence are viewed as agents that learn to cooperatively maximize a sentence-level reward. Besides, we propose to utilize massive unlabeled images to boost captioning performance. Extensive experiments on MSCOCO image captioning benchmark show that our NAIC model achieves a performance comparable to state-of-the-art autoregressive models, while brings 13.9⇥ decoding speedup.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:2005.04690 [cs]},
+	author = {Guo, Longteng and Liu, Jing and Zhu, Xinxin and He, Xingjian and Jiang, Jie and Lu, Hanqing},
+	month = may,
+	year = {2020},
+	note = {arXiv: 2005.04690},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning, Computer Science - Computer Vision and Pattern Recognition},
+	annote = {Comment: IJCAI 2020 (copyright held by IJCAI)},
+	file = {Guo et al. - 2020 - Non-Autoregressive Image Captioning with Counterfa.pdf:/Users/andrew/Zotero/storage/72QQXTCP/Guo et al. - 2020 - Non-Autoregressive Image Captioning with Counterfa.pdf:application/pdf},
+}
+
+
+@article{bao_non-autoregressive_2019_position_learning,
+	title = {Non-autoregressive {Transformer} by {Position} {Learning}},
+	url = {http://arxiv.org/abs/1911.10677},
+	abstract = {Non-autoregressive models are promising on various text generation tasks. Previous work hardly considers to explicitly model the positions of generated words. However, the position modeling is an essential problem in nonautoregressive text generation. In this study, we propose PNAT, which incorporates positions as a latent variable into the text generative process. Experimental results show that PNAT achieves top results on machine translation and paraphrase generation tasks, outperforming several strong baselines.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:1911.10677 [cs]},
+	author = {Bao, Yu and Zhou, Hao and Feng, Jiangtao and Wang, Mingxuan and Huang, Shujian and Chen, Jiajun and LI, Lei},
+	month = nov,
+	year = {2019},
+	note = {arXiv: 1911.10677},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+	file = {Bao et al. - 2019 - Non-autoregressive Transformer by Position Learnin.pdf:/Users/andrew/Zotero/storage/ET99MC62/Bao et al. - 2019 - Non-autoregressive Transformer by Position Learnin.pdf:application/pdf},
+}
+
+
+@article{wang_semi-autoregressive_2018,
+	title = {Semi-{Autoregressive} {Neural} {Machine} {Translation}},
+	url = {http://arxiv.org/abs/1808.08583},
+	abstract = {Existing approaches to neural machine translation are typically autoregressive models. While these models attain state-of-the-art translation quality, they are suffering from low parallelizability and thus slow at decoding long sequences. In this paper, we propose a novel model for fast sequence generation —the semi-autoregressive Transformer (SAT). The SAT keeps the autoregressive property in global but relieves in local and thus is able to produce multiple successive words in parallel at each time step. Experiments conducted on English-German and ChineseEnglish translation tasks show that the SAT achieves a good balance between translation quality and decoding speed. On WMT’14 English-German translation, the SAT achieves 5.58⇥ speedup while maintains 88\% translation quality, signiﬁcantly better than the previous non-autoregressive methods. When produces two words at each time step, the SAT is almost lossless (only 1\% degeneration in BLEU score).},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:1808.08583 [cs]},
+	author = {Wang, Chunqi and Zhang, Ji and Chen, Haiqing},
+	month = oct,
+	year = {2018},
+	note = {arXiv: 1808.08583},
+	keywords = {Computer Science - Computation and Language},
+	annote = {Comment: EMNLP 2018},
+	file = {Wang et al. - 2018 - Semi-Autoregressive Neural Machine Translation.pdf:/Users/andrew/Zotero/storage/UULFTAP3/Wang et al. - 2018 - Semi-Autoregressive Neural Machine Translation.pdf:application/pdf},
+}
+
+
+@article{saharia_non-autoregressive_2020_latent_alignment,
+	title = {Non-{Autoregressive} {Machine} {Translation} with {Latent} {Alignments}},
+	url = {http://arxiv.org/abs/2004.07437},
+	abstract = {This paper investigates two latent alignment models for non-autoregressive machine translation, namely CTC and Imputer. CTC generates outputs in a single step, makes strong conditional independence assumptions about output variables, and marginalizes out latent alignments using dynamic programming. Imputer generates outputs in a constant number of steps, and approximately marginalizes out possible generation orders and latent alignments for training. These models are simpler than existing non-autoregressive methods, since they do not require output length prediction as a pre-process. In addition, our architecture is simpler than typical encoder-decoder architectures, since input-output cross attention is not used. On the competitive WMT’14 En→De task, our CTC model achieves 25.7 BLEU with a single generation step, while Imputer achieves 27.5 BLEU with 2 generation steps, and 28.0 BLEU with 4 generation steps. This compares favourably to the baseline autoregressive Transformer with 27.8 BLEU.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:2004.07437 [cs]},
+	author = {Saharia, Chitwan and Chan, William and Saxena, Saurabh and Norouzi, Mohammad},
+	month = nov,
+	year = {2020},
+	note = {arXiv: 2004.07437},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+	file = {Saharia et al. - 2020 - Non-Autoregressive Machine Translation with Latent.pdf:/Users/andrew/Zotero/storage/IG2CD3H3/Saharia et al. - 2020 - Non-Autoregressive Machine Translation with Latent.pdf:application/pdf},
+}
+
+@article{chan_kermit_2019,
+	title = {{KERMIT}: {Generative} {Insertion}-{Based} {Modeling} for {Sequences}},
+	shorttitle = {{KERMIT}},
+	url = {http://arxiv.org/abs/1906.01604},
+	abstract = {We present KERMIT, a simple insertion-based approach to generative modeling for sequences and sequence pairs. KERMIT models the joint distribution and its decompositions (i.e., marginals and conditionals) using a single neural network and, unlike much prior work, does not rely on a prespeciﬁed factorization of the data distribution. During training, one can feed KERMIT paired data (x, y) to learn the joint distribution p(x, y), and optionally mix in unpaired data x or y to reﬁne the marginals p(x) or p(y). During inference, we have access to the conditionals p(x {\textbar} y) and p(y {\textbar} x) in both directions. We can also sample from the joint distribution or the marginals. The model supports both serial fully autoregressive decoding and parallel partially autoregressive decoding, with the latter exhibiting an empirically logarithmic runtime. We demonstrate through experiments in machine translation, representation learning, and zero-shot cloze question answering that our uniﬁed approach is capable of matching or exceeding the performance of dedicated state-of-the-art systems across a wide range of tasks without the need for problem-speciﬁc architectural adaptation.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:1906.01604 [cs, stat]},
+	author = {Chan, William and Kitaev, Nikita and Guu, Kelvin and Stern, Mitchell and Uszkoreit, Jakob},
+	month = jun,
+	year = {2019},
+	note = {arXiv: 1906.01604},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning, Statistics - Machine Learning},
+	annote = {Comment: William Chan, Nikita Kitaev, Kelvin Guu, and Mitchell Stern contributed equally},
+	file = {Chan et al. - 2019 - KERMIT Generative Insertion-Based Modeling for Se.pdf:/Users/andrew/Zotero/storage/WBEWPX5C/Chan et al. - 2019 - KERMIT Generative Insertion-Based Modeling for Se.pdf:application/pdf},
+}
+
+@article{chan_multilingual_kermit,
+	title = {Multilingual {KERMIT}: {It}’s {Not} {Easy} {Being} {Generative}},
+	abstract = {We present multilingual KERMIT, a generative model over multiple languages. Multilingual KERMIT models the joint distribution over multiple languages, and all its decompositions using a single neural network. KERMIT can be trained by feeding it N way parallel-data, bilingual data, or monolingual data. At inference, KERMIT can generate translations for a particular target language, or up to N − 1 languages in parallel. It can also unconditionally generate sentences in multiple languages. Our experiments on the Multi30K dataset containing English, French, Czech, and German languages suggest that the multitask training with the joint objective leads to improvements in bilingual translations. We provide a quantitative analysis of the quality-diversity trade-offs for different variants of KERMIT for conditional generation, and a measurement of self-consistency during unconditional generation. We provide qualitative examples for parallel greedy decoding across languages and sampling from the joint distribution of the 4 languages.},
+	language = {en},
+	author = {Chan, Harris and Kiros, Jamie and Chan, William},
+	pages = {8},
+	file = {Chan et al. - Multilingual KERMIT It’s Not Easy Being Generativ.pdf:/Users/andrew/Zotero/storage/CQBAY765/Chan et al. - Multilingual KERMIT It’s Not Easy Being Generativ.pdf:application/pdf},
+}
+
+
+@article{ghazvininejad_mask-predict_2019,
+	title = {Mask-{Predict}: {Parallel} {Decoding} of {Conditional} {Masked} {Language} {Models}},
+	shorttitle = {Mask-{Predict}},
+	url = {http://arxiv.org/abs/1904.09324},
+	abstract = {Most machine translation systems generate text autoregressively from left to right. We, instead, use a masked language modeling objective to train a model to predict any subset of the target words, conditioned on both the input text and a partially masked target translation. This approach allows for efficient iterative decoding, where we first predict all of the target words non-autoregressively, and then repeatedly mask out and regenerate the subset of words that the model is least confident about. By applying this strategy for a constant number of iterations, our model improves state-of-the-art performance levels for non-autoregressive and parallel decoding translation models by over 4 BLEU on average. It is also able to reach within about 1 BLEU point of a typical left-to-right transformer model, while decoding significantly faster.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:1904.09324 [cs, stat]},
+	author = {Ghazvininejad, Marjan and Levy, Omer and Liu, Yinhan and Zettlemoyer, Luke},
+	month = sep,
+	year = {2019},
+	note = {arXiv: 1904.09324},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computation and Language, Computer Science - Machine Learning, Statistics - Machine Learning},
+	annote = {Comment: EMNLP 2019},
+	file = {Ghazvininejad et al. - 2019 - Mask-Predict Parallel Decoding of Conditional Mas.pdf:/Users/andrew/Zotero/storage/E5TK763P/Ghazvininejad et al. - 2019 - Mask-Predict Parallel Decoding of Conditional Mas.pdf:application/pdf},
+}
+
+@article{ran_learning_to_recover_2020,
+	title = {Learning to {Recover} from {Multi}-{Modality} {Errors} for {Non}-{Autoregressive} {Neural} {Machine} {Translation}},
+	url = {http://arxiv.org/abs/2006.05165},
+	abstract = {Non-autoregressive neural machine translation (NAT) predicts the entire target sequence simultaneously and significantly accelerates inference process. However, NAT discards the dependency information in a sentence, and thus inevitably suffers from the multi-modality problem: the target tokens may be provided by different possible translations, often causing token repetitions or missing. To alleviate this problem, we propose a novel semi-autoregressive model RecoverSAT in this work, which generates a translation as a sequence of segments. The segments are generated simultaneously while each segment is predicted token-by-token. By dynamically determining segment length and deleting repetitive segments, RecoverSAT is capable of recovering from repetitive and missing token errors. Experimental results on three widely-used benchmark datasets show that our proposed model achieves more than 4\${\textbackslash}times\$ speedup while maintaining comparable performance compared with the corresponding autoregressive model.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:2006.05165 [cs]},
+	author = {Ran, Qiu and Lin, Yankai and Li, Peng and Zhou, Jie},
+	month = jun,
+	year = {2020},
+	note = {arXiv: 2006.05165},
+	keywords = {Computer Science - Computation and Language},
+	annote = {Comment: This work has been accepted for publication at ACL2020},
+	file = {Ran et al. - 2020 - Learning to Recover from Multi-Modality Errors for.pdf:/Users/andrew/Zotero/storage/8MLDAMDZ/Ran et al. - 2020 - Learning to Recover from Multi-Modality Errors for.pdf:application/pdf},
+}
+
+
+@article{stern_insertion_2019,
+	title = {Insertion {Transformer}: {Flexible} {Sequence} {Generation} via {Insertion} {Operations}},
+	shorttitle = {Insertion {Transformer}},
+	url = {http://arxiv.org/abs/1902.03249},
+	abstract = {We present the Insertion Transformer, an iterative, partially autoregressive model for sequence generation based on insertion operations. Unlike typical autoregressive models which rely on a ﬁxed, often left-to-right ordering of the output, our approach accommodates arbitrary orderings by allowing for tokens to be inserted anywhere in the sequence during decoding. This ﬂexibility confers a number of advantages: for instance, not only can our model be trained to follow speciﬁc orderings such as left-to-right generation or a binary tree traversal, but it can also be trained to maximize entropy over all valid insertions for robustness. In addition, our model seamlessly accommodates both fully autoregressive generation (one insertion at a time) and partially autoregressive generation (simultaneous insertions at multiple locations). We validate our approach by analyzing its performance on the WMT 2014 EnglishGerman machine translation task under various settings for training and decoding. We ﬁnd that the Insertion Transformer outperforms many prior non-autoregressive approaches to translation at comparable or better levels of parallelism, and successfully recovers the performance of the original Transformer while requiring only logarithmically many iterations during decoding.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:1902.03249 [cs, stat]},
+	author = {Stern, Mitchell and Chan, William and Kiros, Jamie and Uszkoreit, Jakob},
+	month = feb,
+	year = {2019},
+	note = {arXiv: 1902.03249},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {Stern et al. - 2019 - Insertion Transformer Flexible Sequence Generatio.pdf:/Users/andrew/Zotero/storage/SY9M4BR6/Stern et al. - 2019 - Insertion Transformer Flexible Sequence Generatio.pdf:application/pdf},
+}
+
+@article{chan_imputer_2020,
+	title = {Imputer: {Sequence} {Modelling} via {Imputation} and {Dynamic} {Programming}},
+	shorttitle = {Imputer},
+	url = {http://arxiv.org/abs/2002.08926},
+	abstract = {This paper presents the Imputer, a neural sequence model that generates output sequences iteratively via imputations. The Imputer is an iterative generative model, requiring only a constant number of generation steps independent of the number of input or output tokens. The Imputer can be trained to approximately marginalize over all possible alignments between the input and output sequences, and all possible generation orders. We present a tractable dynamic programming training algorithm, which yields a lower bound on the log marginal likelihood. When applied to end-to-end speech recognition, the Imputer outperforms prior non-autoregressive models and achieves competitive results to autoregressive models. On LibriSpeech test-other, the Imputer achieves 11.1 WER, outperforming CTC at 13.0 WER and seq2seq at 12.5 WER.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:2002.08926 [cs, eess]},
+	author = {Chan, William and Saharia, Chitwan and Hinton, Geoffrey and Norouzi, Mohammad and Jaitly, Navdeep},
+	month = apr,
+	year = {2020},
+	note = {arXiv: 2002.08926},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning, Computer Science - Sound, Electrical Engineering and Systems Science - Audio and Speech Processing},
+	file = {Chan et al. - 2020 - Imputer Sequence Modelling via Imputation and Dyn.pdf:/Users/andrew/Zotero/storage/2H3ZSJUR/Chan et al. - 2020 - Imputer Sequence Modelling via Imputation and Dyn.pdf:application/pdf},
+}
+
+@article{zhou_improving_2020_with_monolingual_data,
+	title = {Improving {Non}-autoregressive {Neural} {Machine} {Translation} with {Monolingual} {Data}},
+	url = {http://arxiv.org/abs/2005.00932},
+	abstract = {Non-autoregressive (NAR) neural machine translation is usually done via knowledge distillation from an autoregressive (AR) model. Under this framework, we leverage large monolingual corpora to improve the NAR model’s performance, with the goal of transferring the AR model’s generalization ability while preventing overﬁtting. On top of a strong NAR baseline, our experimental results on the WMT14 En-De and WMT16 En-Ro news translation tasks conﬁrm that monolingual data augmentation consistently improves the performance of the NAR model to approach the teacher AR model’s performance, yields comparable or better results than the best non-iterative NAR methods in the literature and helps reduce overﬁtting in the training process.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:2005.00932 [cs]},
+	author = {Zhou, Jiawei and Keung, Phillip},
+	month = nov,
+	year = {2020},
+	note = {arXiv: 2005.00932},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+	annote = {Comment: Published in ACL 2020},
+	file = {Zhou and Keung - 2020 - Improving Non-autoregressive Neural Machine Transl.pdf:/Users/andrew/Zotero/storage/F8PYCUQK/Zhou and Keung - 2020 - Improving Non-autoregressive Neural Machine Transl.pdf:application/pdf},
+}
+
+
+@article{ran_guiding_2020_reordering,
+	title = {Guiding {Non}-{Autoregressive} {Neural} {Machine} {Translation} {Decoding} with {Reordering} {Information}},
+	url = {http://arxiv.org/abs/1911.02215},
+	abstract = {Non-autoregressive neural machine translation (NAT) generates each target word in parallel and has achieved promising inference acceleration. However, existing NAT models still have a big gap in translation quality compared to autoregressive neural machine translation models due to the enormous decoding space. To address this problem, we propose a novel NAT framework ReorderNAT which explicitly models the reordering information in the decoding procedure. We further introduce deterministic and non-deterministic decoding strategies that utilize reordering information to narrow the decoding search space in our proposed ReorderNAT. Experimental results on various widely-used datasets show that our proposed model achieves better performance compared to existing NAT models, and even achieves comparable translation quality as autoregressive translation models with a signiﬁcant speedup.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:1911.02215 [cs]},
+	author = {Ran, Qiu and Lin, Yankai and Li, Peng and Zhou, Jie},
+	month = dec,
+	year = {2020},
+	note = {arXiv: 1911.02215},
+	keywords = {Computer Science - Computation and Language},
+	annote = {Comment: Accepted by AAAI 2021},
+	file = {Ran et al. - 2020 - Guiding Non-Autoregressive Neural Machine Translat.pdf:/Users/andrew/Zotero/storage/BEK7F6NW/Ran et al. - 2020 - Guiding Non-Autoregressive Neural Machine Translat.pdf:application/pdf},
+}
+
+
+@article{ma_flowseq_2019,
+	title = {{FlowSeq}: {Non}-{Autoregressive} {Conditional} {Sequence} {Generation} with {Generative} {Flow}},
+	shorttitle = {{FlowSeq}},
+	url = {http://arxiv.org/abs/1909.02480},
+	abstract = {Most sequence-to-sequence (seq2seq) models are autoregressive; they generate each token by conditioning on previously generated tokens. In contrast, non-autoregressive seq2seq models generate all tokens in one pass, which leads to increased efficiency through parallel processing on hardware such as GPUs. However, directly modeling the joint distribution of all tokens simultaneously is challenging, and even with increasingly complex model structures accuracy lags significantly behind autoregressive models. In this paper, we propose a simple, efficient, and effective model for non-autoregressive sequence generation using latent variable models. Specifically, we turn to generative flow, an elegant technique to model complex distributions using neural networks, and design several layers of flow tailored for modeling the conditional density of sequential latent variables. We evaluate this model on three neural machine translation (NMT) benchmark datasets, achieving comparable performance with state-of-the-art non-autoregressive NMT models and almost constant decoding time w.r.t the sequence length.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:1909.02480 [cs]},
+	author = {Ma, Xuezhe and Zhou, Chunting and Li, Xian and Neubig, Graham and Hovy, Eduard},
+	month = oct,
+	year = {2019},
+	note = {arXiv: 1909.02480},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+	annote = {Comment: Accepted by EMNLP 2019 (Long Paper)},
+	file = {Ma et al. - 2019 - FlowSeq Non-Autoregressive Conditional Sequence G.pdf:/Users/andrew/Zotero/storage/BGZTBAH9/Ma et al. - 2019 - FlowSeq Non-Autoregressive Conditional Sequence G.pdf:application/pdf},
+}
+
+
+@article{qian_glancing_2020,
+	title = {Glancing {Transformer} for {Non}-{Autoregressive} {Neural} {Machine} {Translation}},
+	url = {http://arxiv.org/abs/2008.07905},
+	abstract = {Non-autoregressive neural machine translation achieves remarkable inference acceleration compared to autoregressive models. However, current non-autoregressive models still fall behind their autoregressive counterparts in prediction accuracy. We attribute the accuracy gaps to two disadvantages of non-autoregressive models: a) learning simultaneous generation under the overly strong conditional independence assumption; b) lacking explicit target language modeling. In this paper, we propose Glancing Transformer (GLAT) to address the above disadvantages, which reduces the difﬁculty of learning simultaneous generation and introduces explicit target language modeling in the non-autoregressive setting at the same time. Experiments on several benchmarks demonstrate that our approach signiﬁcantly improves the accuracy of non-autoregressive models without sacriﬁcing any inference efﬁciency. In particular, GLAT achieves 30.91 BLEU on WMT 2014 German-English, which narrows the gap between autoregressive models and non-autoregressive models to less than 0.5 BLEU score.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:2008.07905 [cs]},
+	author = {Qian, Lihua and Zhou, Hao and Bao, Yu and Wang, Mingxuan and Qiu, Lin and Zhang, Weinan and Yu, Yong and Li, Lei},
+	month = aug,
+	year = {2020},
+	note = {arXiv: 2008.07905},
+	keywords = {Computer Science - Computation and Language},
+	annote = {Comment: 11 pages, 3 figures, 4 tables},
+	file = {Qian et al. - 2020 - Glancing Transformer for Non-Autoregressive Neural.pdf:/Users/andrew/Zotero/storage/FTNJNKMJ/Qian et al. - 2020 - Glancing Transformer for Non-Autoregressive Neural.pdf:application/pdf},
+}
+
+
+@article{guo_fine-tuning_2019_curriculum,
+	title = {Fine-{Tuning} by {Curriculum} {Learning} for {Non}-{Autoregressive} {Neural} {Machine} {Translation}},
+	url = {http://arxiv.org/abs/1911.08717},
+	abstract = {Non-autoregressive translation (NAT) models remove the dependence on previous target tokens and generate all target tokens in parallel, resulting in signiﬁcant inference speedup but at the cost of inferior translation accuracy compared to autoregressive translation (AT) models. Considering that AT models have higher accuracy and are easier to train than NAT models, and both of them share the same model conﬁgurations, a natural idea to improve the accuracy of NAT models is to transfer a well-trained AT model to an NAT model through ﬁne-tuning. However, since AT and NAT models differ greatly in training strategy, straightforward ﬁnetuning does not work well. In this work, we introduce curriculum learning into ﬁne-tuning for NAT. Speciﬁcally, we design a curriculum in the ﬁne-tuning process to progressively switch the training from autoregressive generation to nonautoregressive generation. Experiments on four benchmark translation datasets show that the proposed method achieves good improvement (more than 1 BLEU score) over previous NAT baselines in terms of translation accuracy, and greatly speed up (more than 10 times) the inference process over AT baselines.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:1911.08717 [cs, stat]},
+	author = {Guo, Junliang and Tan, Xu and Xu, Linli and Qin, Tao and Chen, Enhong and Liu, Tie-Yan},
+	month = nov,
+	year = {2019},
+	note = {arXiv: 1911.08717},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	annote = {Comment: AAAI 2020},
+	file = {Guo et al. - 2019 - Fine-Tuning by Curriculum Learning for Non-Autoreg.pdf:/Users/andrew/Zotero/storage/4QIX2D7Q/Guo et al. - 2019 - Fine-Tuning by Curriculum Learning for Non-Autoreg.pdf:application/pdf},
+}
+
+
+@article{ding_context-aware_2020,
+	title = {Context-{Aware} {Cross}-{Attention} for {Non}-{Autoregressive} {Translation}},
+	url = {http://arxiv.org/abs/2011.00770},
+	abstract = {Non-autoregressive translation (NAT) signiﬁcantly accelerates the inference process by predicting the entire target sequence. However, due to the lack of target dependency modelling in the decoder, the conditional generation process heavily depends on the cross-attention. In this paper, we reveal a localness perception problem in NAT cross-attention, for which it is difﬁcult to adequately capture source context. To alleviate this problem, we propose to enhance signals of neighbour source tokens into conventional cross-attention. Experimental results on several representative datasets show that our approach can consistently improve translation quality over strong NAT baselines. Extensive analyses demonstrate that the enhanced cross-attention achieves better exploitation of source contexts by leveraging both local and global information.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:2011.00770 [cs]},
+	author = {Ding, Liang and Wang, Longyue and Wu, Di and Tao, Dacheng and Tu, Zhaopeng},
+	month = nov,
+	year = {2020},
+	note = {arXiv: 2011.00770},
+	keywords = {Computer Science - Computation and Language},
+	annote = {Comment: To appear in COLING 2020},
+	file = {Ding et al. - 2020 - Context-Aware Cross-Attention for Non-Autoregressi.pdf:/Users/andrew/Zotero/storage/S8XAW7EA/Ding et al. - 2020 - Context-Aware Cross-Attention for Non-Autoregressi.pdf:application/pdf},
+}
+
+@article{ren_study_2020_comma,
+	title = {A {Study} of {Non}-autoregressive {Model} for {Sequence} {Generation}},
+	url = {http://arxiv.org/abs/2004.10454},
+	abstract = {Non-autoregressive (NAR) models generate all the tokens of a sequence in parallel, resulting in faster generation speed compared to their autoregressive (AR) counterparts but at the cost of lower accuracy. Different techniques including knowledge distillation and source-target alignment have been proposed to bridge the gap between AR and NAR models in various tasks such as neural machine translation (NMT), automatic speech recognition (ASR), and text to speech (TTS). With the help of those techniques, NAR models can catch up with the accuracy of AR models in some tasks but not in some others. In this work, we conduct a study to understand the difficulty of NAR sequence generation and try to answer: (1) Why NAR models can catch up with AR models in some tasks but not all? (2) Why techniques like knowledge distillation and source-target alignment can help NAR models. Since the main difference between AR and NAR models is that NAR models do not use dependency among target tokens while AR models do, intuitively the difficulty of NAR sequence generation heavily depends on the strongness of dependency among target tokens. To quantify such dependency, we propose an analysis model called CoMMA to characterize the difficulty of different NAR sequence generation tasks. We have several interesting findings: 1) Among the NMT, ASR and TTS tasks, ASR has the most target-token dependency while TTS has the least. 2) Knowledge distillation reduces the target-token dependency in target sequence and thus improves the accuracy of NAR models. 3) Source-target alignment constraint encourages dependency of a target token on source tokens and thus eases the training of NAR models.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:2004.10454 [cs, eess]},
+	author = {Ren, Yi and Liu, Jinglin and Tan, Xu and Zhao, Zhou and Zhao, Sheng and Liu, Tie-Yan},
+	month = may,
+	year = {2020},
+	note = {arXiv: 2004.10454},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning, Computer Science - Sound, Electrical Engineering and Systems Science - Audio and Speech Processing},
+	annote = {Comment: Accepted by ACL 2020},
+	file = {Ren et al. - 2020 - A Study of Non-autoregressive Model for Sequence G.pdf:/Users/andrew/Zotero/storage/APSTWQCR/Ren et al. - 2020 - A Study of Non-autoregressive Model for Sequence G.pdf:application/pdf},
+}
+
+
+@article{kim_sequence-level_2016_knowledge_distillation,
+	title = {Sequence-{Level} {Knowledge} {Distillation}},
+	url = {http://arxiv.org/abs/1606.07947},
+	abstract = {Neural machine translation (NMT) offers a novel alternative formulation of translation that is potentially simpler than statistical approaches. However to reach competitive performance, NMT models need to be exceedingly large. In this paper we consider applying knowledge distillation approaches (Bucila et al., 2006; Hinton et al., 2015) that have proven successful for reducing the size of neural models in other domains to the problem of NMT. We demonstrate that standard knowledge distillation applied to word-level prediction can be effective for NMT, and also introduce two novel sequence-level versions of knowledge distillation that further improve performance, and somewhat surprisingly, seem to eliminate the need for beam search (even when applied on the original teacher model). Our best student model runs 10 times faster than its state-of-the-art teacher with little loss in performance. It is also significantly better than a baseline model trained without knowledge distillation: by 4.2/1.7 BLEU with greedy decoding/beam search. Applying weight pruning on top of knowledge distillation results in a student model that has 13 times fewer parameters than the original teacher model, with a decrease of 0.4 BLEU.},
+	urldate = {2021-01-18},
+	journal = {arXiv:1606.07947 [cs]},
+	author = {Kim, Yoon and Rush, Alexander M.},
+	month = sep,
+	year = {2016},
+	note = {arXiv: 1606.07947},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing, unread},
+	annote = {Comment: EMNLP 2016},
+}
+@article{Levenshtein1965BinaryCC_lev_distance,
+  title={Binary codes capable of correcting deletions, insertions, and reversals},
+  author={V. I. Levenshtein},
+  journal={Soviet physics. Doklady},
+  year={1965},
+  volume={10},
+  pages={707-710}
+}
+
+
+@article{rezende_variational_2016_flow,
+	title = {Variational {Inference} with {Normalizing} {Flows}},
+	url = {http://arxiv.org/abs/1505.05770},
+	abstract = {The choice of approximate posterior distribution is one of the core problems in variational inference. Most applications of variational inference employ simple families of posterior approximations in order to allow for efficient inference, focusing on mean-field or other simple structured approximations. This restriction has a significant impact on the quality of inferences made using variational methods. We introduce a new approach for specifying flexible, arbitrarily complex and scalable approximate posterior distributions. Our approximations are distributions constructed through a normalizing flow, whereby a simple initial density is transformed into a more complex one by applying a sequence of invertible transformations until a desired level of complexity is attained. We use this view of normalizing flows to develop categories of finite and infinitesimal flows and provide a unified view of approaches for constructing rich posterior approximations. We demonstrate that the theoretical advantages of having posteriors that better match the true posterior, combined with the scalability of amortized variational approaches, provides a clear improvement in performance and applicability of variational inference.},
+	urldate = {2021-01-19},
+	journal = {arXiv:1505.05770 [cs, stat]},
+	author = {Rezende, Danilo Jimenez and Mohamed, Shakir},
+	month = jun,
+	year = {2016},
+	note = {arXiv: 1505.05770},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Computation, Statistics - Machine Learning, Statistics - Methodology, unread},
+	annote = {Comment: Proceedings of the 32nd International Conference on Machine Learning},
+}
+
+@misc{fedus2021switch,
+      title={Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity}, 
+      author={William Fedus and Barret Zoph and Noam Shazeer},
+      year={2021},
+      eprint={2101.03961},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+
+@article{bapna_simple_2019_adaptor1,
+	title = {Simple, {Scalable} {Adaptation} for {Neural} {Machine} {Translation}},
+	url = {http://arxiv.org/abs/1909.08478},
+	abstract = {Fine-tuning pre-trained Neural Machine Translation (NMT) models is the dominant approach for adapting to new languages and domains. However, ﬁne-tuning requires adapting and maintaining a separate model for each target task. We propose a simple yet efﬁcient approach for adaptation in NMT. Our proposed approach consists of injecting tiny task speciﬁc adapter layers into a pre-trained model. These lightweight adapters, with just a small fraction of the original model size, adapt the model to multiple individual tasks simultaneously.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:1909.08478 [cs]},
+	author = {Bapna, Ankur and Arivazhagan, Naveen and Firat, Orhan},
+	month = sep,
+	year = {2019},
+	note = {arXiv: 1909.08478},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+	annote = {Comment: EMNLP 2019},
+	file = {Bapna et al. - 2019 - Simple, Scalable Adaptation for Neural Machine Tra.pdf:/Users/andrew/Zotero/storage/8QI4BWLH/Bapna et al. - 2019 - Simple, Scalable Adaptation for Neural Machine Tra.pdf:application/pdf},
+}
+
+
+@article{houlsby_parameter-efficient_2019_adaptor2,
+	title = {Parameter-{Efficient} {Transfer} {Learning} for {NLP}},
+	url = {http://arxiv.org/abs/1902.00751},
+	abstract = {Fine-tuning large pre-trained models is an effective transfer mechanism in NLP. However, in the presence of many downstream tasks, fine-tuning is parameter inefficient: an entire new model is required for every task. As an alternative, we propose transfer with adapter modules. Adapter modules yield a compact and extensible model; they add only a few trainable parameters per task, and new tasks can be added without revisiting previous ones. The parameters of the original network remain fixed, yielding a high degree of parameter sharing. To demonstrate adapter's effectiveness, we transfer the recently proposed BERT Transformer model to 26 diverse text classification tasks, including the GLUE benchmark. Adapters attain near state-of-the-art performance, whilst adding only a few parameters per task. On GLUE, we attain within 0.4\% of the performance of full fine-tuning, adding only 3.6\% parameters per task. By contrast, fine-tuning trains 100\% of the parameters per task.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:1902.00751 [cs, stat]},
+	author = {Houlsby, Neil and Giurgiu, Andrei and Jastrzebski, Stanislaw and Morrone, Bruna and de Laroussilhe, Quentin and Gesmundo, Andrea and Attariyan, Mona and Gelly, Sylvain},
+	month = jun,
+	year = {2019},
+	note = {arXiv: 1902.00751},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {Houlsby et al. - 2019 - Parameter-Efficient Transfer Learning for NLP.pdf:/Users/andrew/Zotero/storage/YVB9G25T/Houlsby et al. - 2019 - Parameter-Efficient Transfer Learning for NLP.pdf:application/pdf},
+}
+
+
+@article{mikolov_efficient_2013_word2vec,
+	title = {Efficient {Estimation} of {Word} {Representations} in {Vector} {Space}},
+	url = {http://arxiv.org/abs/1301.3781},
+	abstract = {We propose two novel model architectures for computing continuous vector representations of words from very large data sets. The quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks. We observe large improvements in accuracy at much lower computational cost, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set. Furthermore, we show that these vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.},
+	urldate = {2021-01-14},
+	journal = {arXiv:1301.3781 [cs]},
+	author = {Mikolov, Tomas and Chen, Kai and Corrado, Greg and Dean, Jeffrey},
+	month = sep,
+	year = {2013},
+	note = {arXiv: 1301.3781},
+	keywords = {Computer Science - Computation and Language},
+	file = {arXiv Fulltext PDF:/Users/andrew/Zotero/storage/I266P6F5/Mikolov et al. - 2013 - Efficient Estimation of Word Representations in Ve.pdf:application/pdf;arXiv.org Snapshot:/Users/andrew/Zotero/storage/GVZE8PL6/1301.html:text/html},
+}
+
+
+@article{bojanowski_enriching_2017_fasttext,
+	title = {Enriching {Word} {Vectors} with {Subword} {Information}},
+	url = {http://arxiv.org/abs/1607.04606},
+	abstract = {Continuous word representations, trained on large unlabeled corpora are useful for many natural language processing tasks. Popular models that learn such representations ignore the morphology of words, by assigning a distinct vector to each word. This is a limitation, especially for languages with large vocabularies and many rare words. In this paper, we propose a new approach based on the skipgram model, where each word is represented as a bag of character \$n\$-grams. A vector representation is associated to each character \$n\$-gram; words being represented as the sum of these representations. Our method is fast, allowing to train models on large corpora quickly and allows us to compute word representations for words that did not appear in the training data. We evaluate our word representations on nine different languages, both on word similarity and analogy tasks. By comparing to recently proposed morphological word representations, we show that our vectors achieve state-of-the-art performance on these tasks.},
+	urldate = {2021-01-21},
+	journal = {arXiv:1607.04606 [cs]},
+	author = {Bojanowski, Piotr and Grave, Edouard and Joulin, Armand and Mikolov, Tomas},
+	month = jun,
+	year = {2017},
+	note = {arXiv: 1607.04606},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning, unread},
+	annote = {Comment: Accepted to TACL. The two first authors contributed equally},
+}
+
+
+@inproceedings{papineni_bleu_2002,
+	address = {Philadelphia, Pennsylvania, USA},
+	title = {Bleu: a {Method} for {Automatic} {Evaluation} of {Machine} {Translation}},
+	shorttitle = {Bleu},
+	url = {https://www.aclweb.org/anthology/P02-1040},
+	doi = {10.3115/1073083.1073135},
+	urldate = {2021-01-21},
+	booktitle = {Proceedings of the 40th {Annual} {Meeting} of the {Association} for {Computational} {Linguistics}},
+	publisher = {Association for Computational Linguistics},
+	author = {Papineni, Kishore and Roukos, Salim and Ward, Todd and Zhu, Wei-Jing},
+	month = jul,
+	year = {2002},
+	keywords = {unread},
+	pages = {311--318},
+	file = {Full Text PDF:/Users/andrew/Zotero/storage/3VBPI4VZ/Papineni et al. - 2002 - Bleu a Method for Automatic Evaluation of Machine.pdf:application/pdf},
+}
+
+
+@article{qi_prophetnet_2020,
+	title = {{ProphetNet}: {Predicting} {Future} {N}-gram for {Sequence}-to-{Sequence} {Pre}-training},
+	shorttitle = {{ProphetNet}},
+	url = {http://arxiv.org/abs/2001.04063},
+	abstract = {In this paper, we present a new sequence-tosequence pre-training model called ProphetNet, which introduces a novel self-supervised objective named future n-gram prediction and the proposed n-stream self-attention mechanism. Instead of the optimization of one-step ahead prediction in traditional sequence-to-sequence model, the ProphetNet is optimized by n-step ahead prediction which predicts the next n tokens simultaneously based on previous context tokens at each time step. The future n-gram prediction explicitly encourages the model to plan for the future tokens and prevent overﬁtting on strong local correlations. We pre-train ProphetNet using a base scale dataset (16GB) and a large scale dataset (160GB) respectively. Experimental results show ProphetNet achieves the best performance on both abstractive summarization and question generation tasks compared to the models using the same base scale pre-training dataset. For the large scale dataset pre-training, ProphetNet achieves new state-ofthe-art results on Gigaword and comparable results on CNN/DailyMail using only about 1/5 pre-training epochs of the previous model.},
+	language = {en},
+	urldate = {2020-12-21},
+	journal = {arXiv:2001.04063 [cs]},
+	author = {Qi, Weizhen and Yan, Yu and Gong, Yeyun and Liu, Dayiheng and Duan, Nan and Chen, Jiusheng and Zhang, Ruofei and Zhou, Ming},
+	month = oct,
+	year = {2020},
+	note = {arXiv: 2001.04063},
+	keywords = {Computer Science - Computation and Language},
+	annote = {Comment: Accepted to EMNLP 2020 Findings. Project page: https://github.com/microsoft/ProphetNet},
+	file = {Qi et al. - 2020 - ProphetNet Predicting Future N-gram for Sequence-.pdf:/Users/andrew/Zotero/storage/JWFWMTXM/Qi et al. - 2020 - ProphetNet Predicting Future N-gram for Sequence-.pdf:application/pdf},
+}
+
+
+@article{zhuang_comprehensive_2020_transfer_learning,
+	title = {A {Comprehensive} {Survey} on {Transfer} {Learning}},
+	url = {http://arxiv.org/abs/1911.02685},
+	abstract = {Transfer learning aims at improving the performance of target learners on target domains by transferring the knowledge contained in different but related source domains. In this way, the dependence on a large number of target domain data can be reduced for constructing target learners. Due to the wide application prospects, transfer learning has become a popular and promising area in machine learning. Although there are already some valuable and impressive surveys on transfer learning, these surveys introduce approaches in a relatively isolated way and lack the recent advances in transfer learning. Due to the rapid expansion of the transfer learning area, it is both necessary and challenging to comprehensively review the relevant studies. This survey attempts to connect and systematize the existing transfer learning researches, as well as to summarize and interpret the mechanisms and the strategies of transfer learning in a comprehensive way, which may help readers have a better understanding of the current research status and ideas. Unlike previous surveys, this survey paper reviews more than forty representative transfer learning approaches, especially homogeneous transfer learning approaches, from the perspectives of data and model. The applications of transfer learning are also briefly introduced. In order to show the performance of different transfer learning models, over twenty representative transfer learning models are used for experiments. The models are performed on three different datasets, i.e., Amazon Reviews, Reuters-21578, and Office-31. And the experimental results demonstrate the importance of selecting appropriate transfer learning models for different applications in practice.},
+	urldate = {2021-01-21},
+	journal = {arXiv:1911.02685 [cs, stat]},
+	author = {Zhuang, Fuzhen and Qi, Zhiyuan and Duan, Keyu and Xi, Dongbo and Zhu, Yongchun and Zhu, Hengshu and Xiong, Hui and He, Qing},
+	month = jun,
+	year = {2020},
+	note = {arXiv: 1911.02685},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning, unread},
+	annote = {Comment: 31 pages, 7 figures},
+}
+
+@inproceedings{ethayarajh-2019-contextual_ani,
+    title = "How Contextual are Contextualized Word Representations? Comparing the Geometry of {BERT}, {ELM}o, and {GPT}-2 Embeddings",
+    author = "Ethayarajh, Kawin",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D19-1006",
+    doi = "10.18653/v1/D19-1006",
+    pages = "55--65",
+    abstract = "Replacing static word embeddings with contextualized word representations has yielded significant improvements on many NLP tasks. However, just how contextual are the contextualized representations produced by models such as ELMo and BERT? Are there infinitely many context-specific representations for each word, or are words essentially assigned one of a finite number of word-sense representations? For one, we find that the contextualized representations of all words are not isotropic in any layer of the contextualizing model. While representations of the same word in different contexts still have a greater cosine similarity than those of two different words, this self-similarity is much lower in upper layers. This suggests that upper layers of contextualizing models produce more context-specific representations, much like how upper layers of LSTMs produce more task-specific representations. In all layers of ELMo, BERT, and GPT-2, on average, less than 5{\%} of the variance in a word{'}s contextualized representations can be explained by a static embedding for that word, providing some justification for the success of contextualized representations.",
+}
+
+@inproceedings{wolf-etal-2020-transformers,
+    title = "Transformers: State-of-the-Art Natural Language Processing",
+    author = "Wolf, Thomas  and
+      Debut, Lysandre  and
+      Sanh, Victor  and
+      Chaumond, Julien  and
+      Delangue, Clement  and
+      Moi, Anthony  and
+      Cistac, Pierric  and
+      Rault, Tim  and
+      Louf, Remi  and
+      Funtowicz, Morgan  and
+      Davison, Joe  and
+      Shleifer, Sam  and
+      von Platen, Patrick  and
+      Ma, Clara  and
+      Jernite, Yacine  and
+      Plu, Julien  and
+      Xu, Canwen  and
+      Le Scao, Teven  and
+      Gugger, Sylvain  and
+      Drame, Mariama  and
+      Lhoest, Quentin  and
+      Rush, Alexander",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+    month = oct,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.emnlp-demos.6",
+    doi = "10.18653/v1/2020.emnlp-demos.6",
+    pages = "38--45",
+    abstract = "Recent progress in natural language processing has been driven by advances in both model architecture and model pretraining. Transformer architectures have facilitated building higher-capacity models and pretraining has made it possible to effectively utilize this capacity for a wide variety of tasks. Transformers is an open-source library with the goal of opening up these advances to the wider machine learning community. The library consists of carefully engineered state-of-the art Transformer architectures under a unified API. Backing this library is a curated collection of pretrained models made by and available for the community. Transformers is designed to be extensible by researchers, simple for practitioners, and fast and robust in industrial deployments. The library is available at https://github.com/huggingface/transformers.",
+}

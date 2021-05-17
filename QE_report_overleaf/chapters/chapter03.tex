@@ -1,0 +1,46 @@
+% Simple adaptor layer for ngram prediction 
+
+% Motivation – words often cluster together as a phrase- ngram 
+
+% Predicting a future and past window vs future ngram prediction (prophet-net) 
+
+% Past window allows us to perform post editing 
+
+% Transfer learning 
+
+% If original data has lots of modes, will it be faster to reduce the number of modes very transfer learning? 
+
+% Using graph information 
+
+% Syntax information might help circumvent the lack of autoregressive factorization 
+
+In this chapter we discuss our methodology, inspiration and thought process behind our proposed approach.
+\section{Motivation}
+The research work mentioned in Section \ref{sec:NAT model} often reinvents the wheel and proposes novel model architectures. These new architectures are typically trained from scratch on the same data as their autoregressive counterparts, and the number of parameters of the novel models are often increased significantly. The complexity of the models are also not straightforward and simple to understand. This precludes the use of many autoregressive models that have already been trained. 
+
+Given that it has been asserted by research \cite{gu_non-autoregressive_2018,zhou_understanding_2020} that the output distribution of an autoregressive model is multi-modal, the next natural step is to wonder if we can reduce the multi-modality in an already trained autoregressive model for it to work in a non-autoregressive setting. To this end, we investigate the use of transfer learning.
+
+
+
+\section{Transfer Learning} \label{subsec:transfer_learning}
+As mentioned in Section \ref{subsubsec:transfer_learning_me}, transfer learning \cite{zhuang_comprehensive_2020_transfer_learning} is a common machine learning technique which aims to adapt the information in a trained model to a related domain. In today's Natural Language Processing landscape, transfer learning is made ubiquitous and popular by the ease of access of pretrained language models like BERT \cite{devlin_bert_2019}. Using transfer learning (Toy example in Figure \ref{fig:transfer_learning_toy_example}) allows us to use pretrained models and possibly save lots of compute time.
+
+\subsection{Adaptor Layers}\label{subsec:adaptor_layers}
+There has been work looking into how transfer learning can be made more efficient. Adaptor layers \cite{bapna_simple_2019_adaptor1,houlsby_parameter-efficient_2019_adaptor2} were one of the proposed ideas . Simply put, adaptor layers are a small module of parameters which can be plugged into each layer of the transformer architecture. This allowed most of the pretrained transformer to be frozen, and allowing us to train only the adaptor module. Freezing most of the model leads to significant reduction in training time and computational power. In Section \ref{subsec:architecture}, we will explain how the adaptor modules are incorporated into the model. 
+
+\section{N-gram language modeling} \label{sec:ngram_lm}
+N-grams refer to contiguous groups of words or  phonemes that happen together in a sentence. Traditionally, n-grams have been used for static word emebddings such as word2vec \cite{mikolov_efficient_2013_word2vec} and fastText \cite{bojanowski_enriching_2017_fasttext}. Both algorithms make use of co-occurrence information such as n-grams in order to compute vector representation of a word. In the domain of language sequence evaluation, many evaluation methods such as BLEU \cite{papineni_bleu_2002} make use of n-grams to score a pair of reference text and generated text.
+
+More recently, ProphetNet \cite{qi_prophetnet_2020} proposed a novel future n-gram prediction task for the model to predict future n-grams. We adopt a variation of this task for non-autoregressive sequence generation and will explain it in Section \ref{sec:past_future_n-gram_lm}.
+
+
+\section{Research Questions}
+Given the availability of pretrained language models, it would be extremely convenient and efficient if we could adapt these pretrained autoregressive language models in non-autoregressive research. Therefore, we pose these research questions:
+
+\begin{enumerate}
+    \item Is it possible to convert a pretrained autoregressive model to a non-autoregressive model using transfer learning?
+    \item Is the n-gram prediction task sufficient for non-autoregressive sequence generation?
+    \item Which layers in the transformer architecture are instrumental for better performance in non-autoregressive sequence generation?
+\end{enumerate}
+
+We explain our methodology to answer these questions in the next chapter.
